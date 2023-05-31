@@ -1,9 +1,4 @@
-- name: SkyWalking Infra E2E
-  # You may pin to the exact commit or the version.
-  # uses: apache/skywalking-infra-e2e@82494d053f879c2e10bc6c1439c05673d50bb37b
-  uses: apache/skywalking-infra-e2e@v1.2.0
+- name: Run E2E Test
+  uses: apache/skywalking-infra-e2e@main      # always prefer to use a revision instead of `main`.
   with:
-    # File path of e2e file
-    e2e-file: 
-    # The container logs directory
-    log-dir: # optional
+    e2e-file: e2e.yaml                        # need to run E2E file path
